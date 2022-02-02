@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Comic Sans MS", "Poppins", serif;
+    font-size: 16px;
+}
+
+p {
+    text-align: justify;
+    line-height: 2rem;
+    font-family: "Poppins", Sans-serif, serif;
+    font-size: 18px;
+}
+
+nav {
+    width: 100%;
+    padding: 0 10rem;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .brand img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 12px;
+}
+
+.item {
+    padding: 40px;
+    order: 3;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.toggle {
+    order: 1;
+    font-size: 20px;
+}
+
+.navbar li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.active .item {
+    display: block;
+}
+
+.sticky {
+    background-color: white;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .2);
+}
+
+#navbar.sticky .item {
+    padding: 20px 40px 20px 40px;
+}
+
+#navbar.sticky .item a {
+    color: black;
+}
+
+#navbar.sticky .brand img {
+    width: 60px;
+    height: 60px;
+    margin-top: 5px;
+}
+
+@media all and (max-width: 700px) {
+    .img-banner {
+        display: none;
+    }
+}
+
+@media all and (max-width: 560px) {
+    .img-banner {
+        display: none;
+    }
+}
+
+@media all and (min-width: 700px) {
+    .navbar {
+        justify-content: center;
+    }
+    .brand {
+        flex: 1;
+    }
+    .toggle {
+        flex: 1;
+        text-align: right;
+        order: 2;
+    }
+}
+
+@media all and (min-width: 960px) {
+    .navbar {
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        background: none;
+    }
+    .brand {
+        order: 0;
+    }
+    .item {
+        order: 1;
+        position: relative;
+        display: block;
+        width: auto;
+    }
+    .toggle {
+        display: none;
+    }
+}
+
+.secc .front-1 {
+    padding-top: 4rem;
+    padding-right: 2rem;
+    color: white;
+}
+
+.secc .front-1 h1 {
+    font-size: 42px;
+}
+
+.secc .img-banner {
+    margin-top: -1rem;
+}
